@@ -1,5 +1,4 @@
 const ShoeCard = ({ imgURL, changeBigShoeImage, BigShoeImg }) => {
-  
   const handleClick = () => {
     console.log('first', imgURL,BigShoeImg)
     // Check if the current big shoe image isn't the same as the clicked shoe's BigShoe image
@@ -10,10 +9,18 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, BigShoeImg }) => {
 
   return (
     <div
-      className={`border-2 rounded-xl ${BigShoeImg === imgURL.BigShoe ? 'border-coral-red' : 'border-transparent'} cursor-pointer max-sm:flex-1`}
+      className={`border-2 rounded-xl ${
+        BigShoeImg === imgURL.BigShoe
+          ? "border-coral-red"
+          : "border-transparent"
+      } cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
+<<<<<<< HEAD
       <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+=======
+      <div>
+>>>>>>> fd417d430cd27dc47184d5a8b526404cdf667118
         <img
           src={imgURL.thumbnail} // The small thumbnail image
           alt="Shoe collection thumbnail"
