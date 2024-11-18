@@ -1,16 +1,9 @@
 import React from "react";
 import { products } from "../../constants";
-import { PopularProductCard } from "../../components/PopularProductCard";
+import  PopularProductCard  from "../../components/PopularProductCard";
 
 const PopularProducts = () => {
   return (
-<<<<<<< HEAD
-    <div>PopularProducts</div>
-  )
-}
-  
-export default PopularProducts
-=======
     <section id="products" className="max-container max-sm:mt-12">
       <div className="flex flex-col justify-start gap-5">
         <h2 className="text-4xl font-palanquin font-bold">
@@ -31,4 +24,3 @@ export default PopularProducts
 };
 
 export default PopularProducts;
->>>>>>> fd417d430cd27dc47184d5a8b526404cdf667118
