@@ -6,12 +6,12 @@ import { bigShoe1 } from "../images";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  console.log('bigShoe1',bigShoe1)
+  console.log("bigShoe1", bigShoe1);
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   // useEffect(()=>{
   //   // setBigShoeImg(bigShoe1)
   // },[])
-  console.log('bigShoeImg',bigShoeImg)
+  console.log("bigShoeImg", bigShoeImg);
 
   return (
     <section
@@ -61,8 +61,8 @@ const Hero = () => {
               key={shoe.thumbnail}
               imgURL={shoe}
               changeBigShoeImage={(shoe) => {
-                console.log('-----------------',shoe);
-                setBigShoeImg(shoe)
+                console.log("-----------------", shoe);
+                setBigShoeImg(shoe);
               }}
               BigShoeImg={bigShoeImg}
             />
